@@ -1,20 +1,17 @@
-const express = require('express'); 
+const express = require('express');
 
-const User = require('../models/User');
+const User = require('../models/user');
 
-const router = express.Router(); 
+const router = express.Router();
 
 router.post('/register', async (req, res) => {
     try {
-
         const user = await User.create(req.body);
 
-        return res.send({ user });
-
+        return res.send( {user} );
+        
     } catch (err) {
-
-        return res.status(400).send({error: 'Falha no registro'});
-
+        return res.status(400).send({ error: 'Falha no registro'})
     }
 });
 
