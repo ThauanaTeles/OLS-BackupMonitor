@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { FormGroup, TextField, Grid, Button } from '@material-ui/core';
-import { Link, Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '../style/styles.css';
 import image from '../images/logo.png';

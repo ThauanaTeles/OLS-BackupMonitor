@@ -1,7 +1,6 @@
-import React from 'react';
-
 import Register from './user/Register';
 import Login from './user/Login';
+import Home from './dashboard/Home';
 
 export default [
     {
@@ -12,5 +11,9 @@ export default [
     {
       component: Register,
       path: '/register',
+    }, 
+    {
+      component: Home, 
+      path: '/dasboard'
     }
 ]

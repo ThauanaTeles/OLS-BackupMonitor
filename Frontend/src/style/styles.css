@@ -23,3 +23,11 @@
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 100px;   
 }
+#sidebar{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    max-width: 250px;
+}
+#sidebar-subitem-text {
+    font-size: 0.8rem;
+  }

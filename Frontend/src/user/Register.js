@@ -1,8 +1,7 @@
 import React from 'react'; 
-import { FormGroup, TextField, Grid, Button, Link } from '@material-ui/core';
+import { FormGroup, TextField, Grid, Button } from '@material-ui/core';
 
 import '../style/styles.css';
-import image from '../images/logo.png';
 
 const Register = () => {
 

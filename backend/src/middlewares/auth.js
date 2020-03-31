@@ -1,10 +1,9 @@
 const jwt = require('jsonwebtoken');
 const authConfig = require('../config/auth.json');
 
+
 module.exports = (req, res, next) => {
-
     
-
         const authHeader = req.headers.authorization;
 
         if (!authHeader)
@@ -17,7 +16,7 @@ module.exports = (req, res, next) => {
 
         const [ scheme, token ] = parts;
 
-        if ( !/^Bearer$/i.test(scheme))
+        if (!/^Bearer$/i.test(scheme))
         
             return res.status(401).send({ error: 'Token mal formatado' });
 
@@ -28,6 +27,7 @@ module.exports = (req, res, next) => {
 
             return next();
         });
+
     
 }
 

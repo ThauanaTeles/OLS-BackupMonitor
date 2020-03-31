@@ -6,8 +6,7 @@ const authConfig = require('../config/auth');
 function generateToken(params = {}) {
         
   return jwt.sign(params, authConfig.secret, {
-      expiresIn: 86400, 
-
+    expiresIn: 86400, 
   });
 }
 
@@ -24,7 +23,7 @@ class UserController {
         return res.status(400).send({ error: 'E-mail já cadastrado'});
       
       }
-
+      
       const user = await User.create(req.body);
 
       user.password = undefined;
